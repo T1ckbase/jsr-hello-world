@@ -184,3 +184,13 @@ Deno.test('helloWorld() with Emoji Story', () => {
   assertEquals(world, '🌍🚀🌟');
   // A wizard casts a spell on the world, sending it to the stars
 });
+
+Deno.test('helloWorld() with Symbols', () => {
+  const { hello, world } = helloWorld(
+    () => 'temporal paradox',
+    Symbol('eternal return'),
+  );
+  assertEquals(hello, "()=>'temporal paradox'");
+  assertEquals(world, 'Symbol(eternal return)');
+  // Symbols are a bit of a mystery, but they still get a hello and a world
+});
