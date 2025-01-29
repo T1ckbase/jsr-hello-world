@@ -116,6 +116,9 @@
 import type { HelloWorld } from './types.ts';
 export type { HelloWorld } from './types.ts';
 
+import helloWorldJson from './hello-world.json' with { type: 'json' };
+export { helloWorldJson };
+
 /**
  * The `helloWorld()` function is an ancient ritual passed down through the ages of TypeScript lore,
  * preserved in comments and whispered in pull request reviews. It has been carefully crafted by
