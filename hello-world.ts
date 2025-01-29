@@ -116,7 +116,11 @@
 import type { HelloWorld } from './types.ts';
 export type { HelloWorld } from './types.ts';
 
-import helloWorldJson from './hello-world.json' with { type: 'json' };
+import _helloWorldJson from './hello-world.json' with { type: 'json' };
+/**
+ * Just a JSON object.
+ */
+const helloWorldJson = _helloWorldJson;
 export { helloWorldJson };
 
 /**
