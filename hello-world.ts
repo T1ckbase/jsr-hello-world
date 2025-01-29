@@ -120,7 +120,7 @@ import _helloWorldJson from './hello-world.json' with { type: 'json' };
 /**
  * Just a JSON object.
  */
-const helloWorldJson = _helloWorldJson;
+const helloWorldJson: HelloWorld = _helloWorldJson;
 export { helloWorldJson };
 
 /**
