@@ -32,11 +32,13 @@ jobs:
       - name: Build npm package
         run: deno task build_npm
 
-      - name: Publish Package to npmjs
+      - name: Set up Node
         uses: actions/setup-node@v4
         with:
           registry-url: 'https://registry.npmjs.org'
-      - run:
+
+      - name: Publish Package to npmjs
+        run: |
           cd ./npm
           npm publish --provenance --access public
         env:
