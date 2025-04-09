@@ -28,3 +28,16 @@ jobs:
 
       - name: Publish to JSR
         run: deno publish
+
+      - name: Build npm package
+        run: deno task build_npm
+
+      - name: Publish Package to npmjs
+        uses: actions/setup-node@v4
+        with:
+          registry-url: 'https://registry.npmjs.org'
+      - run: cd ./npm
+      - run: npm publish --provenance --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+

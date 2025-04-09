@@ -6,10 +6,18 @@
     ".": "./hello-world.ts",
     "./hello-world.json": "./hello-world.json"
   },
+  "publish": {
+    "exclude": [
+      "npm/",
+      "./hello-world_test.ts"
+    ]
+  },
   "tasks": {
-    "test": "deno test ./hello-world_test.ts"
+    "test": "deno test ./hello-world_test.ts",
+    "build_npm": "deno -A build_npm.ts"
   },
   "imports": {
+    "@deno/dnt": "jsr:@deno/dnt@^0.41.3",
     "@std/assert": "jsr:@std/assert@1"
   },
   "fmt": {
@@ -19,5 +27,9 @@
     "semiColons": true,
     "singleQuote": true,
     "useTabs": false
-  }
+  },
+  "lint": {
+    "exclude": ["npm/"]
+  },
+  "exclude": ["npm/"]
 }
