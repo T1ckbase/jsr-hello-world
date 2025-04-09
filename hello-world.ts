@@ -116,12 +116,12 @@
 import type { HelloWorld } from './types.ts';
 export type { HelloWorld } from './types.ts';
 
-import _helloWorldJson from './hello-world.json' with { type: 'json' };
-/**
- * Just a JSON object.
- */
-const helloWorldJson: HelloWorld = _helloWorldJson;
-export { helloWorldJson };
+// import _helloWorldJson from './hello-world.json' with { type: 'json' };
+// /**
+//  * Just a JSON object.
+//  */
+// const helloWorldJson: HelloWorld = _helloWorldJson;
+// export { helloWorldJson };
 
 /**
  * The `helloWorld()` function is an ancient ritual passed down through the ages of TypeScript lore,

@@ -1,8 +1,11 @@
 {
   "name": "@t1ckbase/hello-world",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "license": "MIT",
-  "exports": "./hello-world.ts",
+  "exports": {
+    ".": "./hello-world.ts",
+    "./hello-world.json": "./hello-world.json"
+  },
   "tasks": {
     "test": "deno test ./hello-world_test.ts"
   },
