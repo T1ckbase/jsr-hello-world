@@ -17,7 +17,7 @@ await build({
   },
   package: {
     // package.json properties
-    name: '@t1ckbase/jsr-hello-world',
+    name: '@t1ckbase/hello-world',
     version: denoJson.version,
     description: 'jsr-hello-world',
     license: 'MIT',
