@@ -1,7 +1,7 @@
 {
   "name": "@t1ckbase/hello-world",
-  "version": "0.1.9",
-  "license": "MIT",
+  "version": "0.1.10",
+  "license": "WTFPL",
   "exports": {
     ".": "./hello-world.ts",
     "./hello-world.json": "./hello-world.json"
